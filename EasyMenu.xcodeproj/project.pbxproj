@@ -1,0 +1,523 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		377D9A8645F0FB9F2FFA7B35 /* Pods_EasyMenu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A8CB5791A3573A0A0EF5C01 /* Pods_EasyMenu.framework */; };
+		993206281F7E203B00BF1DCC /* SplashVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 993206271F7E203B00BF1DCC /* SplashVC.swift */; };
+		9932062A1F7E224A00BF1DCC /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 993206291F7E224A00BF1DCC /* HomeVC.swift */; };
+		9932062D1F7E4CF600BF1DCC /* CellVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9932062C1F7E4CF600BF1DCC /* CellVC.swift */; };
+		9932062F1F7E4DD000BF1DCC /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9932062E1F7E4DD000BF1DCC /* Section.swift */; };
+		9932568B1F70E85C0010EB2A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9932568A1F70E85C0010EB2A /* Constants.swift */; };
+		9934BD7B1F83505700F99C6D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9934BD7A1F83505700F99C6D /* GoogleService-Info.plist */; };
+		99421E7C1F6A549000A0345B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99421E7B1F6A549000A0345B /* AppDelegate.swift */; };
+		99421E7E1F6A549000A0345B /* WelcomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99421E7D1F6A549000A0345B /* WelcomeVC.swift */; };
+		99421E811F6A549000A0345B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99421E7F1F6A549000A0345B /* Main.storyboard */; };
+		99421E861F6A549000A0345B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99421E851F6A549000A0345B /* Assets.xcassets */; };
+		99421E891F6A549000A0345B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99421E871F6A549000A0345B /* LaunchScreen.storyboard */; };
+		99421E961F6A9C2600A0345B /* DesignableTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99421E951F6A9C2600A0345B /* DesignableTextField.swift */; };
+		9950155E1F82096500FA99E6 /* CreateOrderVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9950155D1F82096500FA99E6 /* CreateOrderVC.swift */; };
+		995015601F82166D00FA99E6 /* AddItemVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9950155F1F82166D00FA99E6 /* AddItemVC.swift */; };
+		99C5715F1F8259B200D3A70B /* item.json in Resources */ = {isa = PBXBuildFile; fileRef = 99C5715E1F8259B200D3A70B /* item.json */; };
+		99C574AD1F838FFA00BB4B76 /* leveldb.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99C574AC1F838FFA00BB4B76 /* leveldb.framework */; };
+		99EFDC0B1F73ED9C0038D57B /* user.json in Resources */ = {isa = PBXBuildFile; fileRef = 99EFDC0A1F73ED9C0038D57B /* user.json */; };
+		99F0658D1F83541900298B8D /* GoogleToolboxForMac.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99F0658A1F83541900298B8D /* GoogleToolboxForMac.framework */; };
+		99F0658E1F83541900298B8D /* GTMSessionFetcher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99F0658B1F83541900298B8D /* GTMSessionFetcher.framework */; };
+		99F0658F1F83541900298B8D /* nanopb.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99F0658C1F83541900298B8D /* nanopb.framework */; };
+		99F27BA51F7E718400AF6C68 /* OrderDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F27BA41F7E718400AF6C68 /* OrderDetailVC.swift */; };
+		99F3A7891F7123A40035F4DB /* DesignableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F3A7881F7123A40035F4DB /* DesignableView.swift */; };
+		99F6F5971F6BECC000F614CB /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F6F5961F6BECC000F614CB /* RegisterVC.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		193BC02D4D93CA7ADB4BA7C4 /* Pods-EasyMenu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyMenu.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EasyMenu/Pods-EasyMenu.debug.xcconfig"; sourceTree = "<group>"; };
+		5A8CB5791A3573A0A0EF5C01 /* Pods_EasyMenu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EasyMenu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		993206271F7E203B00BF1DCC /* SplashVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashVC.swift; sourceTree = "<group>"; };
+		993206291F7E224A00BF1DCC /* HomeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		9932062C1F7E4CF600BF1DCC /* CellVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellVC.swift; sourceTree = "<group>"; };
+		9932062E1F7E4DD000BF1DCC /* Section.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Section.swift; sourceTree = "<group>"; };
+		9932568A1F70E85C0010EB2A /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		9934BD7A1F83505700F99C6D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		99421E781F6A548F00A0345B /* EasyMenu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EasyMenu.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		99421E7B1F6A549000A0345B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		99421E7D1F6A549000A0345B /* WelcomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeVC.swift; sourceTree = "<group>"; };
+		99421E801F6A549000A0345B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		99421E851F6A549000A0345B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		99421E881F6A549000A0345B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		99421E8A1F6A549000A0345B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		99421E951F6A9C2600A0345B /* DesignableTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableTextField.swift; sourceTree = "<group>"; };
+		9950155D1F82096500FA99E6 /* CreateOrderVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateOrderVC.swift; sourceTree = "<group>"; };
+		9950155F1F82166D00FA99E6 /* AddItemVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddItemVC.swift; sourceTree = "<group>"; };
+		99C5715E1F8259B200D3A70B /* item.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = item.json; sourceTree = "<group>"; };
+		99C574AC1F838FFA00BB4B76 /* leveldb.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = leveldb.framework; path = "Pods/../build/Debug-iphoneos/leveldb-library/leveldb.framework"; sourceTree = "<group>"; };
+		99EFDC0A1F73ED9C0038D57B /* user.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = user.json; sourceTree = "<group>"; };
+		99F0658A1F83541900298B8D /* GoogleToolboxForMac.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleToolboxForMac.framework; path = "../../Library/Developer/Xcode/DerivedData/EasyMenu-eaqlhxovoovxtrhabtxgjzraayvw/Build/Products/Debug-iphoneos/GoogleToolboxForMac/GoogleToolboxForMac.framework"; sourceTree = "<group>"; };
+		99F0658B1F83541900298B8D /* GTMSessionFetcher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GTMSessionFetcher.framework; path = "../../Library/Developer/Xcode/DerivedData/EasyMenu-eaqlhxovoovxtrhabtxgjzraayvw/Build/Products/Debug-iphoneos/GTMSessionFetcher/GTMSessionFetcher.framework"; sourceTree = "<group>"; };
+		99F0658C1F83541900298B8D /* nanopb.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = nanopb.framework; path = "../../Library/Developer/Xcode/DerivedData/EasyMenu-eaqlhxovoovxtrhabtxgjzraayvw/Build/Products/Debug-iphoneos/nanopb/nanopb.framework"; sourceTree = "<group>"; };
+		99F27BA41F7E718400AF6C68 /* OrderDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderDetailVC.swift; sourceTree = "<group>"; };
+		99F3A7881F7123A40035F4DB /* DesignableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableView.swift; sourceTree = "<group>"; };
+		99F6F5961F6BECC000F614CB /* RegisterVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
+		FCC2B89781D2F7C6A7EC9776 /* Pods-EasyMenu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyMenu.release.xcconfig"; path = "Pods/Target Support Files/Pods-EasyMenu/Pods-EasyMenu.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		99421E751F6A548F00A0345B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99C574AD1F838FFA00BB4B76 /* leveldb.framework in Frameworks */,
+				99F0658D1F83541900298B8D /* GoogleToolboxForMac.framework in Frameworks */,
+				99F0658E1F83541900298B8D /* GTMSessionFetcher.framework in Frameworks */,
+				99F0658F1F83541900298B8D /* nanopb.framework in Frameworks */,
+				377D9A8645F0FB9F2FFA7B35 /* Pods_EasyMenu.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		12A4404835B1375550EFE68D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				193BC02D4D93CA7ADB4BA7C4 /* Pods-EasyMenu.debug.xcconfig */,
+				FCC2B89781D2F7C6A7EC9776 /* Pods-EasyMenu.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		8BB68636B237393A0570C508 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				99C574AC1F838FFA00BB4B76 /* leveldb.framework */,
+				99F0658A1F83541900298B8D /* GoogleToolboxForMac.framework */,
+				99F0658B1F83541900298B8D /* GTMSessionFetcher.framework */,
+				99F0658C1F83541900298B8D /* nanopb.framework */,
+				5A8CB5791A3573A0A0EF5C01 /* Pods_EasyMenu.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9932062B1F7E4CD700BF1DCC /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				9932062C1F7E4CF600BF1DCC /* CellVC.swift */,
+			);
+			name = Cell;
+			sourceTree = "<group>";
+		};
+		99421E6F1F6A548F00A0345B = {
+			isa = PBXGroup;
+			children = (
+				99421E7A1F6A548F00A0345B /* EasyMenu */,
+				99421E791F6A548F00A0345B /* Products */,
+				12A4404835B1375550EFE68D /* Pods */,
+				8BB68636B237393A0570C508 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		99421E791F6A548F00A0345B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				99421E781F6A548F00A0345B /* EasyMenu.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		99421E7A1F6A548F00A0345B /* EasyMenu */ = {
+			isa = PBXGroup;
+			children = (
+				99EFDC091F73ED700038D57B /* Resources */,
+				99421E941F6A9BF400A0345B /* Constants */,
+				99421E921F6A792200A0345B /* ui */,
+				99421E851F6A549000A0345B /* Assets.xcassets */,
+				99421E871F6A549000A0345B /* LaunchScreen.storyboard */,
+				99421E8A1F6A549000A0345B /* Info.plist */,
+				9934BD7A1F83505700F99C6D /* GoogleService-Info.plist */,
+			);
+			path = EasyMenu;
+			sourceTree = "<group>";
+		};
+		99421E921F6A792200A0345B /* ui */ = {
+			isa = PBXGroup;
+			children = (
+				9932062B1F7E4CD700BF1DCC /* Cell */,
+				99421E7F1F6A549000A0345B /* Main.storyboard */,
+				99421E7B1F6A549000A0345B /* AppDelegate.swift */,
+				993206271F7E203B00BF1DCC /* SplashVC.swift */,
+				99421E7D1F6A549000A0345B /* WelcomeVC.swift */,
+				99F6F5961F6BECC000F614CB /* RegisterVC.swift */,
+				993206291F7E224A00BF1DCC /* HomeVC.swift */,
+				99F27BA41F7E718400AF6C68 /* OrderDetailVC.swift */,
+				9950155D1F82096500FA99E6 /* CreateOrderVC.swift */,
+				9950155F1F82166D00FA99E6 /* AddItemVC.swift */,
+			);
+			name = ui;
+			sourceTree = "<group>";
+		};
+		99421E941F6A9BF400A0345B /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				99421E951F6A9C2600A0345B /* DesignableTextField.swift */,
+				9932568A1F70E85C0010EB2A /* Constants.swift */,
+				99F3A7881F7123A40035F4DB /* DesignableView.swift */,
+				9932062E1F7E4DD000BF1DCC /* Section.swift */,
+			);
+			name = Constants;
+			sourceTree = "<group>";
+		};
+		99EFDC091F73ED700038D57B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				99EFDC0A1F73ED9C0038D57B /* user.json */,
+				99C5715E1F8259B200D3A70B /* item.json */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		99421E771F6A548F00A0345B /* EasyMenu */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 99421E8D1F6A549000A0345B /* Build configuration list for PBXNativeTarget "EasyMenu" */;
+			buildPhases = (
+				54558F3BA0062037E0F8F444 /* [CP] Check Pods Manifest.lock */,
+				99421E741F6A548F00A0345B /* Sources */,
+				99421E751F6A548F00A0345B /* Frameworks */,
+				99421E761F6A548F00A0345B /* Resources */,
+				864FDE7F1236C8E6E6082758 /* [CP] Embed Pods Frameworks */,
+				29C36C05EE0536636496902B /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EasyMenu;
+			productName = EasyMenu;
+			productReference = 99421E781F6A548F00A0345B /* EasyMenu.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		99421E701F6A548F00A0345B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Zarna M. Patel";
+				TargetAttributes = {
+					99421E771F6A548F00A0345B = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 56T8BECPLN;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 99421E731F6A548F00A0345B /* Build configuration list for PBXProject "EasyMenu" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 99421E6F1F6A548F00A0345B;
+			productRefGroup = 99421E791F6A548F00A0345B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				99421E771F6A548F00A0345B /* EasyMenu */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		99421E761F6A548F00A0345B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99EFDC0B1F73ED9C0038D57B /* user.json in Resources */,
+				99421E891F6A549000A0345B /* LaunchScreen.storyboard in Resources */,
+				99C5715F1F8259B200D3A70B /* item.json in Resources */,
+				99421E861F6A549000A0345B /* Assets.xcassets in Resources */,
+				99421E811F6A549000A0345B /* Main.storyboard in Resources */,
+				9934BD7B1F83505700F99C6D /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		29C36C05EE0536636496902B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EasyMenu/Pods-EasyMenu-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		54558F3BA0062037E0F8F444 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EasyMenu-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		864FDE7F1236C8E6E6082758 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-EasyMenu/Pods-EasyMenu-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EasyMenu/Pods-EasyMenu-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		99421E741F6A548F00A0345B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99421E7E1F6A549000A0345B /* WelcomeVC.swift in Sources */,
+				99421E7C1F6A549000A0345B /* AppDelegate.swift in Sources */,
+				99F27BA51F7E718400AF6C68 /* OrderDetailVC.swift in Sources */,
+				9932062D1F7E4CF600BF1DCC /* CellVC.swift in Sources */,
+				9932568B1F70E85C0010EB2A /* Constants.swift in Sources */,
+				9932062F1F7E4DD000BF1DCC /* Section.swift in Sources */,
+				9932062A1F7E224A00BF1DCC /* HomeVC.swift in Sources */,
+				993206281F7E203B00BF1DCC /* SplashVC.swift in Sources */,
+				99F3A7891F7123A40035F4DB /* DesignableView.swift in Sources */,
+				99421E961F6A9C2600A0345B /* DesignableTextField.swift in Sources */,
+				99F6F5971F6BECC000F614CB /* RegisterVC.swift in Sources */,
+				9950155E1F82096500FA99E6 /* CreateOrderVC.swift in Sources */,
+				995015601F82166D00FA99E6 /* AddItemVC.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		99421E7F1F6A549000A0345B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				99421E801F6A549000A0345B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		99421E871F6A549000A0345B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				99421E881F6A549000A0345B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		99421E8B1F6A549000A0345B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		99421E8C1F6A549000A0345B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		99421E8E1F6A549000A0345B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 193BC02D4D93CA7ADB4BA7C4 /* Pods-EasyMenu.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = 56T8BECPLN;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/GoogleToolboxForMac",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/nanopb",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/GTMSessionFetcher",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/leveldb-library",
+				);
+				INFOPLIST_FILE = EasyMenu/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.digicorp.EasyMenu;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		99421E8F1F6A549000A0345B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FCC2B89781D2F7C6A7EC9776 /* Pods-EasyMenu.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				DEVELOPMENT_TEAM = 56T8BECPLN;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/GoogleToolboxForMac",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/nanopb",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/GTMSessionFetcher",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/leveldb-library",
+				);
+				INFOPLIST_FILE = EasyMenu/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.digicorp.EasyMenu;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		99421E731F6A548F00A0345B /* Build configuration list for PBXProject "EasyMenu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				99421E8B1F6A549000A0345B /* Debug */,
+				99421E8C1F6A549000A0345B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		99421E8D1F6A549000A0345B /* Build configuration list for PBXNativeTarget "EasyMenu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				99421E8E1F6A549000A0345B /* Debug */,
+				99421E8F1F6A549000A0345B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 99421E701F6A548F00A0345B /* Project object */;
+}

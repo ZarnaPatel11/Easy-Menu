@@ -1,0 +1,135 @@
+{
+    "item_categories": [{
+                        "category_name":"Soup",
+                        "items":[{
+                                 "item-name":"Tomato Soup"
+                                 },
+                                 {
+                                 "item-name":"Hot & Sour Soup"
+                                 },
+                                 {
+                                 "item-name":"Manchow Soup"
+                                 },
+                                 {
+                                 "item-name":"Corn & Cheese Soup"
+                                 },
+                                 {
+                                 "item-name":"Coconut & Vegetable Soup"
+                                 }]
+                        },
+                        {
+                        "category_name":"Salad",
+                        "items":[{
+                                 "item-name":"Vegetable Salad"
+                                 },
+                                 {
+                                 "item-name":"Fruit Salad"
+                                 },
+                                 {
+                                 "item-name":"Green Salad"
+                                 },
+                                 {
+                                 "item-name":"Diet Salad"
+                                 },
+                                 {
+                                 "item-name":"Boiled Salad"
+                                 }]
+                        
+                        },
+                        {
+                        "category_name":"Starter",
+                        "items":[{
+                                 "item-name":"Paneer Chilly"
+                                 },
+                                 {
+                                 "item-name":"Manchurian Dry"
+                                 },
+                                 {
+                                 "item-name":"Veg Kabab"
+                                 },
+                                 {
+                                 "item-name":"Paneer Kabab"
+                                 },
+                                 {
+                                 "item-name":"Noodles"
+                                 }]
+                        
+                        },
+                        {
+                        "category_name":"Curries",
+                        "items":[{
+                                 "item-name":"Paneer Tikka"
+                                 },
+                                 {
+                                 "item-name":"Paneer Toofani"
+                                 },
+                                 {
+                                 "item-name":"Paneer Afghani"
+                                 },
+                                 {
+                                 "item-name":"Cheese Butter Masala"
+                                 },
+                                 {
+                                 "item-name":"Mix Vegetables"
+                                 }]
+                        
+                        },
+                        {
+                        "category_name":"Roti",
+                        "items":[{
+                                 "item-name":"Chapati"
+                                 },
+                                 {
+                                 "item-name":"Butter Chapati"
+                                 },
+                                 {
+                                 "item-name":"Tandoori Roti"
+                                 },
+                                 {
+                                 "item-name":"Butter Naan"
+                                 },
+                                 {
+                                 "item-name":"Cheese Naan"
+                                 }]
+                        
+                        },
+                        {
+                        "category_name":"Rice And Dal",
+                        "items":[{
+                                 "item-name":"Jeera Rice"
+                                 },
+                                 {
+                                 "item-name":"Hyderabadi Biryanni"
+                                 },
+                                 {
+                                 "item-name":"Veg Pulav"
+                                 },
+                                 {
+                                 "item-name":"Dal Fry"
+                                 },
+                                 {
+                                 "item-name":"Dal Tadka"
+                                 }]
+                        
+                        },
+                        {
+                        "category_name":"Beverages",
+                        "items":[{
+                                 "item-name":"Butter Milk"
+                                 },
+                                 {
+                                 "item-name":"Soft Drinks"
+                                 },
+                                 {
+                                 "item-name":"Mojitos"
+                                 },
+                                 {
+                                 "item-name":"Mocktails"
+                                 }]
+                        
+                        }]
+}
+
+
+
+

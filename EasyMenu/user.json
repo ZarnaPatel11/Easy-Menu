@@ -1,0 +1,463 @@
+[
+ {
+ "user_id": 1,
+ "first_name": "Zarna",
+ "last_name": "Patel",
+ "active": true,
+ "mobile": "8905528722",
+ "item_type": [{
+               "item_type_id":1,
+               "active":true,
+               "item_type_name":"Soup",
+               "item_detail":[{
+                              "item_name":"Manchow Soup",
+                              "item_Qty":"0.0"
+                              },
+                              {
+                              "item_name":"Tomato Soup",
+                              "item_Qty":"0.0"
+                              },
+                              {
+                              "item_name":"Hot & Sour Soup",
+                              "item_Qty":"0.0"
+                              },
+                              {
+                              "item_name":"Corn & Cheese Soup",
+                              "item_Qty":"0.0"
+                              },
+                              {
+                              "item_name":"Coconut & Vegetable Soup",
+                              "item_Qty":"0.0"
+                              }]
+               },
+               {
+               "item_type_id":2,
+               "active":true,
+               "item_type_name":"Salad",
+               "item_detail":[{
+                              "item_name":"Vegetable Salad",
+                              "item_Qty":"0.0"
+                              },
+                              {
+                              "item_name":"Fruit Salad",
+                              "item_Qty":"0.0"
+                              },
+                              {
+                              "item_name":"Green Salad",
+                              "item_Qty":"0.0"
+                              },
+                              {
+                              "item_name":"Diet Salad",
+                              "item_Qty":"0.0"
+                              },
+                              {
+                              "item_name":"Boiled Salad",
+                              "item_Qty":"0.0"
+                              }]
+               },
+               {
+               "item_type_id":3,
+               "active":true,
+               "item_type_name":"Starter",
+               "item_detail":[{
+                              "item_name":"Paneer Chilly",
+                              "item_Qty":"0.0"
+                              },
+                              {
+                              "item_name":"Manchurian Dry",
+                              "item_Qty":"0.0"
+                              },
+                              {
+                              "item_name":"Veg Kabab",
+                              "item_Qty":"0.0"
+                              },
+                              {
+                              "item_name":"Paneer Kabab",
+                              "item_Qty":"0.0"
+                              },
+                              {
+                              "item_name":"Noodles",
+                              "item_Qty":"0.0"
+                              }]
+               },
+               {
+               "item_type_id":4,
+               "active":true,
+               "item_type_name":"Curries",
+               "item_detail":[{
+                              "item_name":"Paneer Tikka",
+                              "item_Qty":"0.0"
+                              },
+                              {
+                              "item_name":"Paneer Toofani",
+                              "item_Qty":"0.0"
+                              },
+                              {
+                              "item_name":"Paneer Afghani",
+                              "item_Qty":"0.0"
+                              },
+                              {
+                              "item_name":"Cheese Butter Masala",
+                              "item_Qty":"0.0"
+                              },
+                              {
+                              "item_name":"Mix Vegetables",
+                              "item_Qty":"0.0"
+                              }]
+               },
+               {
+               "item_type_id":5,
+               "active":true,
+               "item_type_name":"Roti",
+               "item_detail":[{
+                              "item_name":"Chapati",
+                              "item_Qty":"0.0"
+                              },
+                              {
+                              "item_name":"Butter Chapati",
+                              "item_Qty":"0.0"
+                              },
+                              {
+                              "item_name":"Tandoori Roti",
+                              "item_Qty":"0.0"
+                              },
+                              {
+                              "item_name":"Butter Naan",
+                              "item_Qty":"0.0"
+                              },
+                              {
+                              "item_name":"Cheese Naan",
+                              "item_Qty":"0.0"
+                              }]
+               },
+               {
+               "item_type_id":6,
+               "active":true,
+               "item_type_name":"Rice And Dal",
+               "item_detail":[{
+                              "item_name":"Jeera Rice",
+                              "item_Qty":"0.0"
+                              },
+                              {
+                              "item_name":"Hyderabadi Biryanni",
+                              "item_Qty":"0.0"
+                              },
+                              {
+                              "item_name":"Veg Pulav",
+                              "item_Qty":"0.0"
+                              },
+                              {
+                              "item_name":"Dal Fry",
+                              "item_Qty":"0.0"
+                              },
+                              {
+                              "item_name":"Dal Tadka",
+                              "item_Qty":"0.0"
+                              }]
+               },
+               {
+               "item_type_id":7,
+               "active":true,
+               "item_type_name":"Beverages",
+               "item_detail":[{
+                              "item_name":"Butter Milk",
+                              "item_Qty":"0.0"
+                              },
+                              {
+                              "item_name":"Soft Drinks",
+                              "item_Qty":"0.0"
+                              },
+                              {
+                              "item_name":"Mojitos",
+                              "item_Qty":"0.0"
+                              },
+                              {
+                              "item_name":"Mocktails",
+                              "item_Qty":"0.0"
+                              }]
+               }
+               ]
+ },
+ {
+ "user_id": 2,
+ "first_name": "Smeet",
+ "last_name": "Chavda",
+ "active": true,
+ "mobile": "8866801569",
+ "item_type": [{
+               "item_type_id":1,
+               "active":true,
+               "item_type_name":"Soup",
+               "item_detail":[{
+                              "item_name":"Manchow Soup",
+                              "item_Qty":"0.0"
+                              },
+                              {
+                              "item_name":"Tomato Soup",
+                              "item_Qty":"0.0"
+                              },
+                              {
+                              "item_name":"Hot & Sour Soup",
+                              "item_Qty":"0.0"
+                              },
+                              {
+                              "item_name":"Corn & Cheese Soup",
+                              "item_Qty":"0.0"
+                              }]
+               },
+               {
+               "item_type_id":2,
+               "active":true,
+               "item_type_name":"Salad",
+               "item_detail":[{
+                              "item_name":"Vegetable Salad",
+                              "item_Qty":"0.0"
+                              },
+                              {
+                              "item_name":"Fruit Salad",
+                              "item_Qty":"0.0"
+                              },
+                              {
+                              "item_name":"Green Salad",
+                              "item_Qty":"0.0"
+                              },
+                              {
+                              "item_name":"Diet Salad",
+                              "item_Qty":"0.0"
+                              }]
+               },
+               {
+               "item_type_id":3,
+               "active":true,
+               "item_type_name":"Starter",
+               "item_detail":[{
+                              "item_name":"Paneer Chilly",
+                              "item_Qty":"0.0"
+                              },
+                              {
+                              "item_name":"Manchurian Dry",
+                              "item_Qty":"0.0"
+                              },
+                              {
+                              "item_name":"Veg Kabab",
+                              "item_Qty":"0.0"
+                              },
+                              {
+                              "item_name":"Paneer Kabab",
+                              "item_Qty":"0.0"
+                              }]
+               },
+               {
+               "item_type_id":4,
+               "active":true,
+               "item_type_name":"Curries",
+               "item_detail":[{
+                              "item_name":"Paneer Tikka",
+                              "item_Qty":"0.0"
+                              },
+                              {
+                              "item_name":"Paneer Toofani",
+                              "item_Qty":"0.0"
+                              },
+                              {
+                              "item_name":"Paneer Afghani",
+                              "item_Qty":"0.0"
+                              },
+                              {
+                              "item_name":"Cheese Butter Masala",
+                              "item_Qty":"0.0"
+                              }]
+               },
+               {
+               "item_type_id":5,
+               "active":true,
+               "item_type_name":"Roti",
+               "item_detail":[{
+                              "item_name":"Chapati",
+                              "item_Qty":"0.0"
+                              },
+                              {
+                              "item_name":"Butter Chapati",
+                              "item_Qty":"0.0"
+                              },
+                              {
+                              "item_name":"Tandoori Roti",
+                              "item_Qty":"0.0"
+                              },
+                              {
+                              "item_name":"Butter Naan",
+                              "item_Qty":"0.0"
+                              }]
+               },
+               {
+               "item_type_id":6,
+               "active":true,
+               "item_type_name":"Rice And Dal",
+               "item_detail":[{
+                              "item_name":"Jeera Rice",
+                              "item_Qty":"0.0"
+                              },
+                              {
+                              "item_name":"Hyderabadi Biryanni",
+                              "item_Qty":"0.0"
+                              },
+                              {
+                              "item_name":"Veg Pulav",
+                              "item_Qty":"0.0"
+                              },
+                              {
+                              "item_name":"Dal Fry",
+                              "item_Qty":"0.0"
+                              }]
+               },
+               {
+               "item_type_id":7,
+               "active":true,
+               "item_type_name":"Beverages",
+               "item_detail":[{
+                              "item_name":"Butter Milk",
+                              "item_Qty":"0.0"
+                              },
+                              {
+                              "item_name":"Soft Drinks",
+                              "item_Qty":"0.0"
+                              },
+                              {
+                              "item_name":"Mojitos",
+                              "item_Qty":"0.0"
+                              },
+                              {
+                              "item_name":"Mocktails",
+                              "item_Qty":"0.0"
+                              }]
+               }
+               ]
+ },
+ {
+ "user_id": 3,
+ "first_name": "Kevin",
+ "last_name": "Adesara",
+ "active": true,
+ "mobile": "9998887777",
+ "item_type": [{
+               "item_type_id":1,
+               "active":true,
+               "item_type_name":"Soup",
+               "item_detail":[{
+                              "item_name":"Manchow Soup",
+                              "item_Qty":"0.0"
+                              },
+                              {
+                              "item_name":"Corn & Cheese Soup",
+                              "item_Qty":"0.0"
+                              },
+                              {
+                              "item_name":"Coconut & Vegetable Soup",
+                              "item_Qty":"0.0"
+                              }]
+               },
+               {
+               "item_type_id":2,
+               "active":true,
+               "item_type_name":"Salad",
+               "item_detail":[{
+                              "item_name":"Vegetable Salad",
+                              "item_Qty":"0.0"
+                              },
+                              {
+                              "item_name":"Fruit Salad",
+                              "item_Qty":"0.0"
+                              },
+                              {
+                              "item_name":"Green Salad",
+                              "item_Qty":"0.0"
+                              }]
+               },
+               {
+               "item_type_id":3,
+               "active":true,
+               "item_type_name":"Starter",
+               "item_detail":[{
+                              "item_name":"Paneer Chilly",
+                              "item_Qty":"0.0"
+                              },
+                              {
+                              "item_name":"Manchurian Dry",
+                              "item_Qty":"0.0"
+                              },
+                              {
+                              "item_name":"Veg Kabab",
+                              "item_Qty":"0.0"
+                              }]
+               },
+               {
+               "item_type_id":4,
+               "active":true,
+               "item_type_name":"Curries",
+               "item_detail":[{
+                              "item_name":"Paneer Tikka",
+                              "item_Qty":"0.0"
+                              },
+                              {
+                              "item_name":"Paneer Toofani",
+                              "item_Qty":"0.0"
+                              },
+                              {
+                              "item_name":"Paneer Afghani",
+                              "item_Qty":"0.0"
+                              }]
+               },
+               {
+               "item_type_id":5,
+               "active":true,
+               "item_type_name":"Roti",
+               "item_detail":[{
+                              "item_name":"Chapati",
+                              "item_Qty":"0.0"
+                              },
+                              {
+                              "item_name":"Butter Chapati",
+                              "item_Qty":"0.0"
+                              },
+                              {
+                              "item_name":"Tandoori Roti",
+                              "item_Qty":"0.0"
+                              }]
+               },
+               {
+               "item_type_id":6,
+               "active":true,
+               "item_type_name":"Rice And Dal",
+               "item_detail":[{
+                              "item_name":"Jeera Rice",
+                              "item_Qty":"0.0"
+                              },
+                              {
+                              "item_name":"Hyderabadi Biryanni",
+                              "item_Qty":"0.0"
+                              },
+                              {
+                              "item_name":"Veg Pulav",
+                              "item_Qty":"0.0"
+                              }]
+               },
+               {
+               "item_type_id":7,
+               "active":true,
+               "item_type_name":"Beverages",
+               "item_detail":[{
+                              "item_name":"Butter Milk",
+                              "item_Qty":"0.0"
+                              },
+                              {
+                              "item_name":"Soft Drinks",
+                              "item_Qty":"0.0"
+                              },
+                              {
+                              "item_name":"Mojitos",
+                              "item_Qty":"0.0"
+                              }]
+               }
+               ]
+ }
+ ]

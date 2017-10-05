@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="12141" systemVersion="16A323" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Item" representedClassName=".Item" syncable="YES">
+        <attribute name="is_active" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="item_id" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="item_name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="item_type_id" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="item_types" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ItemType" inverseName="items" inverseEntity="ItemType" syncable="YES"/>
+        <relationship name="order_details" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="OrderDetail" inverseName="items" inverseEntity="OrderDetail" syncable="YES"/>
+    </entity>
+    <entity name="ItemType" representedClassName=".ItemType" syncable="YES">
+        <attribute name="is_active" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="item_type" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="item_type_id" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="items" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Item" inverseName="item_types" inverseEntity="Item" syncable="YES"/>
+    </entity>
+    <entity name="Order" representedClassName=".Order" syncable="YES">
+        <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="hotel" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="no_of_persons" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="order_id" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="total_price" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="user_id" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="order_details" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="OrderDetail" inverseName="orders" inverseEntity="OrderDetail" syncable="YES"/>
+        <relationship name="users" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="orders" inverseEntity="User" syncable="YES"/>
+    </entity>
+    <entity name="OrderDetail" representedClassName=".OrderDetail" syncable="YES">
+        <attribute name="item_id" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="item_price" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="order_detail_id" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="order_id" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="quantity" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="user_id" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <relationship name="items" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Item" inverseName="order_details" inverseEntity="Item" syncable="YES"/>
+        <relationship name="orders" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Order" inverseName="order_details" inverseEntity="Order" syncable="YES"/>
+        <relationship name="users" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="order_details" inverseEntity="User" syncable="YES"/>
+    </entity>
+    <entity name="User" representedClassName=".User" syncable="YES">
+        <attribute name="first_name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="is_active" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="last_name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="mobile" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="profile_picture" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="user_id" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="order_details" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="OrderDetail" inverseName="users" inverseEntity="OrderDetail" syncable="YES"/>
+        <relationship name="orders" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Order" inverseName="users" inverseEntity="Order" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Item" positionX="-65" positionY="-351" width="128" height="135"/>
+        <element name="ItemType" positionX="-119" positionY="-78" width="128" height="105"/>
+        <element name="Order" positionX="-594" positionY="-297" width="128" height="165"/>
+        <element name="OrderDetail" positionX="-371" positionY="-36" width="128" height="180"/>
+        <element name="User" positionX="-261" positionY="-360" width="128" height="165"/>
+    </elements>
+</model>
