@@ -8,29 +8,35 @@
 
 import UIKit
 import FirebaseDatabase
+import SwiftyJSON
+import FirebaseAuth
 
-class AddItemVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UISearchBarDelegate {
+class AddItemVC: Base, UITableViewDelegate, UITableViewDataSource, UISearchBarDelegate {
 
+    struct Objects {
+        var itemCategory : String!
+        var itemName : [String]!
+    }
+    var objectArray = [Objects]()
+    
     var ref:DatabaseReference?
     var handle:DatabaseHandle?
-
-    // Mark: - Variable Declaration
+    let appDelegate = UIApplication.shared.delegate as! AppDelegate
+    
+    // Mark: - Property -
     var searchActive : Bool = false
-    var data = ["San Francisco","New York","San Jose","Chicago","Los Angeles","Austin","Seattle"]
-    var filtered:[String] = []
-    
-//    var items = [
-//        Item(items: "Soup", itemName: ["Tomato Soup","Manchow Soup","Hot & Sour Soup","Corn & Cheese Soup","Coconut & Vegetable Soup"]),
-//        Item(items: "Salad", itemName: ["Vegetable Salad","Fruit Salad","Green Salad","Diet Salad","Boiled Salad"]),
-//        Item(items: "Starter", itemName: ["Paneer Chilly","Manchurian Dry","Veg Kabab","Paneer Kabab","Noodles"]),
-//        Item(items: "Curries", itemName: ["Paneer Tikka","Paneer Toofani","Paneer Afghani","Cheese Butter Masala","Mix Vegetables"]),
-//        Item(items: "Roti", itemName: ["Chapati","Butter Chapati","Tandoori Roti","Butter Naan","Cheese Naan"]),
-//        Item(items: "Rice And Dal", itemName: ["Jeera Rice","Hyderabadi Biryanni","Veg Pulav","Dal Fry","Dal Tadka"]),
-//        Item(items: "Beverages", itemName: ["Butter Milk","Soft Drinks","Mojitos","Mocktails"])
-//    ]
-    
+    var itemName:[String] = []
+    var itemCategory:[String] = []
+    var dict:[String:Array<String>] = [:]
     var hotelDetails = [HotelDetails]()
     var itemDetails = [ItemDetails]()
+    var seletedSection = Int()
+    var seletedTitle = [String]()
+    var seletedDescription = [NSDictionary]()
+    var itemKey = [String]()
+    var itemKeyArray:[String] = []
+    var orderID = String()
+
     // Mark: - Outlets
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var tblView: UITableView!
@@ -38,98 +44,175 @@ class AddItemVC: UIViewController, UITableViewDelegate, UITableViewDataSource, U
     // Mark: - View load Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        tblView.delegate = self
-        tblView.dataSource = self
         searchBar.delegate = self
+        navigationController?.isNavigationBarHidden = false
     }
+    
+
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        navigationController?.isNavigationBarHidden = true
         
-        if let email = UserDefaults.standard.string(forKey: "userId") {
-            ref = Database.database().reference()
-            ref?.child("MyUsers/\(email)").observeSingleEvent(of: .value, with: { (snapshot) in
-                
+        navigationController?.isNavigationBarHidden = false
+        
+            
+            let userPath = appDelegate.databaseRef.child(FTB_MyUsers).child((Auth.auth().currentUser!.uid)).child("orders")
+            userPath.observeSingleEvent(of: .value, with: { (snapshot) in
+             //print(snapshot.value!)
                 if let value = snapshot.value as? NSDictionary {
+                    //print(value.allKeys)
                     
-                    if let orders = value["orders"] as? NSDictionary {
-                        
-                        for i in 0..<orders.allKeys.count {
-                            
-                            self.ref?.child("MyUsers/\(email)/orders/\(orders.allKeys[i])").observeSingleEvent(of: .value, with: { (snapshot) in
-                                
-                                if let value = snapshot.value as? NSDictionary {
-                                    
-                                   // print("addItemVC \(value)")
-                                    
-                                    if let items = value["items"] as? NSDictionary {
-                                        for j in 0..<items.allKeys.count {
-                                            self.ref?.child("MyUsers/\(email)/orders/\(orders.allKeys[i])/items/\(items.allKeys[j])").observeSingleEvent(of: .value, with: {(snapshot) in
-                                                if let value = snapshot.value as? NSDictionary {
-                                                    
-//                                                    let itemCategory = value["item_category"] as? String
-//                                                    let itemName = value["item_name"] as? String
-//                                                    let itemQuantity = value["item_quantity"] as? String
-//                                                    self.itemDetails.insert(ItemDetails(item_category: itemCategory, item_name: itemName, item_quantity: itemQuantity), at: 0)
-                                                    print("value in last inner is \(value)")
-                                                    self.tblView.reloadData()
-                                                }
-                                            })
-                                        }
-                                    }
-                                }
-                            })
-                        }
-                    }
+                    let dict:Any = value.allKeys
+                    
+                  //  print(dict[0])
+                    print(dict)
+                    
                 }
+                
             })
-            { (error) in
-                print(error.localizedDescription)
-            }
-        }
-    }
-    
-    // Mark: - TableView Methods
-    
-    
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-//        if(searchActive) {
-//            return filtered.count
-//        }
-        return itemDetails.count
-    }
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! CellVC
-        cell.lblItemName.text = itemDetails[indexPath.row].item_name
-//        cell.lblPersons.text = hotelDetails[indexPath.row].persons
-//        cell.lblDate.text = hotelDetails[indexPath.row].date
-        return cell
+            
+        
+        
+            
+        
     }
 
     
-    /*func numberOfSections(in tableView: UITableView) -> Int {
-        return items.count
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
     }
+
+    
+    @IBAction func btnAddNewItem(_ sender: UIButton) {
+        let nxt = self.storyboard?.instantiateViewController(withIdentifier: STORYBOARD_IDENTIFIER_AddNewItemVC) as! AddNewItemVC
+        self.navigationController?.pushViewController(nxt, animated: true)
+    }
+    
+    @IBAction func btnSave(_ sender: UIButton) {
+        
+        for i in 0..<(self.seletedTitle.count){
+            for j in 0..<(self.seletedDescription.count) {
+                
+                let cate = self.seletedDescription[j]["subCategory"] as? String
+                print("orderId is \(orderID)")
+                let userItems =  appDelegate.databaseRef.child(FTB_MyUsers).child((Auth.auth().currentUser?.uid)!).child("orders").child(orderID).child("items").child(self.seletedTitle[i]).child(cate!)
+                userItems.setValue(self.seletedDescription[j]){ (error, ref) in
+                    if error == nil{
+                        
+                    }
+                }
+            }
+        }
+    }
+  
+    // Mark: - TableView Methods -
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        
+        return objectArray.count
+    }
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        
+        return objectArray[section].itemName.count
+    }
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! CellVC
+        
+            cell.lblItemName.text = self.objectArray[indexPath.section].itemName[indexPath.row]
+            self.seletedSection = indexPath.section
+            cell.stepper.addTarget(self, action: #selector(self.stepperValueChanged(_:)), for: .valueChanged)
+        
+        return cell
+    }
+ 
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        return items[section].items
+        
+        return objectArray[section].itemCategory
     }
+
     func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
         let header = view as! UITableViewHeaderFooterView
-        header.textLabel?.font = UIFont(name: "Futura", size: 25)
+        header.textLabel?.font = UIFont(name: "Futura", size: 20)
         header.contentView.backgroundColor = UIColor.lightGray
-    }*/
+    }
     
+    func NewValues(_ step:UIStepper){
+        print("step :- \(step)")
+    }
+    //MARK: -  SearchBar Delegate  -
     
+    func searchBarTextDidBeginEditing(_ searchBar: UISearchBar) {
+        
+        searchActive = true;
+       searchBar.showsCancelButton = true
+    }
+    func searchBarTextDidEndEditing(_ searchBar: UISearchBar) {
+        
+        searchActive = false;
+    }
+    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+        
+        searchActive = false;
+        self.view.endEditing(true)
+        searchBar.showsCancelButton = false
+    }
+    func searchBar(_ searchBar: UISearchBar, shouldChangeTextIn range: NSRange, replacementText text: String) -> Bool {
+        
+        return true
+    }
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        
+     // here your search code set
+    }
+    func stepperValueChanged(_ sender:UIStepper!){
+        DispatchQueue.main.async {
+            
+        
+        print("UIStepper is now \(Int(sender.value))")
+        if let cell = sender.superview?.superview as? CellVC {
+            let indexPath = self.tblView.indexPath(for: cell)
+            cell.lblItemQuantity.text = String(sender.value)
+            let quantity = cell.lblItemQuantity.text
+            
+            print("indexPath is \(String(describing: indexPath))")
+            print("sender value is \(sender.value)")
+            print("Qty label is \(String(describing: quantity))")
+            self.seletedTitle.append(self.objectArray[(indexPath?.section)!].itemCategory)
+            print("Title is now \(self.seletedTitle)")
+            if cell.txtPrice.text != ""{
+                let dict:NSDictionary = ["subCategory":cell.lblItemName.text!,"Price":Int(cell.txtPrice.text!)!,"Quantity":2]
+                self.seletedDescription.append(dict)
+                print("SeletedDescription is now \(self.seletedDescription)")
+            }
+            else{
+                self.DAlert(self.ALERT_TITLE, message: "Seltect Price", action: self.ALERT_OK, sender: self)
+            }
+     
+            }
+        }
+    }
+}
+
+
+
+
+//func stepperValueChanged(_:UIStepper) {
+//    let row:Int = (stepper.superview?.tag)!
+//    let value:Int = Int(stepper.value)
+//    print("Row : \(row) Value: \(value)")
+//
+//}
+
 //    func Stepper(_ sender: UIStepper) {
 //        if let cell = sender.superview?.superview as? CellVC {
 //            let indexPath = tblView.indexPath(for: cell)
 //            let quantity = cell.lblItemQty.text
-//            
+//
 //            print("indexPath is \(String(describing: indexPath))")
 //            print("sender valu is \(sender.value)")
 //            print("Qty label is \(quantity)")
-//            
+//
 //            cell.lblItemQty.text = String(sender.value)
 //            tblView.reloadRows(at: [indexPath!], with: .automatic)
 //        }
@@ -155,39 +238,47 @@ class AddItemVC: UIViewController, UITableViewDelegate, UITableViewDataSource, U
 //        self.ref?.child("MyUsers/\(userId!)/orders/\(orderId!)").child("\(sectionTitle!)").child("\(itemName!)").setValue("5")
 //
 //    }
-    
-    // Mark: - SearchBar Methods
-    func searchBarTextDidBeginEditing(_ searchBar: UISearchBar) {
-        searchActive = true;
-    }
-    
-    func searchBarTextDidEndEditing(_ searchBar: UISearchBar) {
-        searchActive = false;
-    }
-    
-    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
-        searchActive = false;
-    }
-    
-    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
-        searchActive = true;
-    }
-    
-    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-        
-        filtered = data.filter({ (text) -> Bool in
-            let tmp: NSString = text as NSString
-            //let range = tmp.rangeOfString(searchText, options: NSString.CompareOptions.CaseInsensitiveSearch)
-            let range = tmp.range(of: searchText, options: NSString.CompareOptions.caseInsensitive)
-            
-            return range.location != NSNotFound
-        })
-        if(filtered.count == 0){
-            searchActive = false;
-        } else {
-            searchActive = true;
-        }
-        self.tblView.reloadData()
-    }
 
-}
+
+
+
+
+
+
+    // Mark: - SearchBar Methods
+//    func searchBarTextDidBeginEditing(_ searchBar: UISearchBar) {
+//        searchActive = true;
+//    }
+//    
+//    func searchBarTextDidEndEditing(_ searchBar: UISearchBar) {
+//        searchActive = false;
+//    }
+//    
+//    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+//        searchActive = false;
+//    }
+//    
+//    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+//        searchActive = true;
+//    }
+//    
+//    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+//        
+//        filtered = data.filter({ (text) -> Bool in
+//            let tmp: NSString = text as NSString
+//            //let range = tmp.rangeOfString(searchText, options: NSString.CompareOptions.CaseInsensitiveSearch)
+//            let range = tmp.range(of: searchText, options: NSString.CompareOptions.caseInsensitive)
+//            
+//            return range.location != NSNotFound
+//        })
+//        if(filtered.count == 0){
+//            searchActive = false;
+//        } else {
+//            searchActive = true;
+//        }
+//        self.tblView.reloadData()
+//    }
+
+
+
+

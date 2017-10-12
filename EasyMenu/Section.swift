@@ -10,11 +10,11 @@ import Foundation
 import UIKit
 
 struct Section {
-    var orders:String
+    var orderDateSection:[String]
     var orderDetail:[[String:String]]
     
-    init(orders:String, orderDetail:[[String:String]]) {
-        self.orders = orders
+    init(orderDateSection:[String], orderDetail:[[String:String]]) {
+        self.orderDateSection = orderDateSection
         self.orderDetail = orderDetail
     }
 }
@@ -33,10 +33,10 @@ struct HotelDetails {
     let hotel_name: String!
     let persons: String!
     let date: String!
+    let orderId: String!
 }
 
 struct ItemDetails {
     let item_category: String!
     let item_name: String!
-    let item_quantity: String!
 }

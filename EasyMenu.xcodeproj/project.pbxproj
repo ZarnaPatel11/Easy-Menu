@@ -14,8 +14,9 @@
 		9932062F1F7E4DD000BF1DCC /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9932062E1F7E4DD000BF1DCC /* Section.swift */; };
 		9932568B1F70E85C0010EB2A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9932568A1F70E85C0010EB2A /* Constants.swift */; };
 		9934BD7B1F83505700F99C6D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9934BD7A1F83505700F99C6D /* GoogleService-Info.plist */; };
+		9939DEC61F878D1900F8BF88 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9939DEC51F878D1900F8BF88 /* SwiftyJSON.framework */; };
 		99421E7C1F6A549000A0345B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99421E7B1F6A549000A0345B /* AppDelegate.swift */; };
-		99421E7E1F6A549000A0345B /* WelcomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99421E7D1F6A549000A0345B /* WelcomeVC.swift */; };
+		99421E7E1F6A549000A0345B /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99421E7D1F6A549000A0345B /* SignInVC.swift */; };
 		99421E811F6A549000A0345B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99421E7F1F6A549000A0345B /* Main.storyboard */; };
 		99421E861F6A549000A0345B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99421E851F6A549000A0345B /* Assets.xcassets */; };
 		99421E891F6A549000A0345B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99421E871F6A549000A0345B /* LaunchScreen.storyboard */; };
@@ -31,6 +32,7 @@
 		99F27BA51F7E718400AF6C68 /* OrderDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F27BA41F7E718400AF6C68 /* OrderDetailVC.swift */; };
 		99F3A7891F7123A40035F4DB /* DesignableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F3A7881F7123A40035F4DB /* DesignableView.swift */; };
 		99F6F5971F6BECC000F614CB /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F6F5961F6BECC000F614CB /* RegisterVC.swift */; };
+		E8D8CD7C1F8D6DD300757F99 /* AddNewItemVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D8CD7B1F8D6DD300757F99 /* AddNewItemVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,9 +44,10 @@
 		9932062E1F7E4DD000BF1DCC /* Section.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Section.swift; sourceTree = "<group>"; };
 		9932568A1F70E85C0010EB2A /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		9934BD7A1F83505700F99C6D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		9939DEC51F878D1900F8BF88 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = "../../Library/Developer/Xcode/DerivedData/EasyMenu-eaqlhxovoovxtrhabtxgjzraayvw/Build/Products/Debug-iphoneos/SwiftyJSON/SwiftyJSON.framework"; sourceTree = "<group>"; };
 		99421E781F6A548F00A0345B /* EasyMenu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EasyMenu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		99421E7B1F6A549000A0345B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		99421E7D1F6A549000A0345B /* WelcomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeVC.swift; sourceTree = "<group>"; };
+		99421E7D1F6A549000A0345B /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
 		99421E801F6A549000A0345B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		99421E851F6A549000A0345B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		99421E881F6A549000A0345B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -61,6 +64,7 @@
 		99F27BA41F7E718400AF6C68 /* OrderDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderDetailVC.swift; sourceTree = "<group>"; };
 		99F3A7881F7123A40035F4DB /* DesignableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableView.swift; sourceTree = "<group>"; };
 		99F6F5961F6BECC000F614CB /* RegisterVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
+		E8D8CD7B1F8D6DD300757F99 /* AddNewItemVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewItemVC.swift; sourceTree = "<group>"; };
 		FCC2B89781D2F7C6A7EC9776 /* Pods-EasyMenu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyMenu.release.xcconfig"; path = "Pods/Target Support Files/Pods-EasyMenu/Pods-EasyMenu.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -69,6 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9939DEC61F878D1900F8BF88 /* SwiftyJSON.framework in Frameworks */,
 				99C574AD1F838FFA00BB4B76 /* leveldb.framework in Frameworks */,
 				99F0658D1F83541900298B8D /* GoogleToolboxForMac.framework in Frameworks */,
 				99F0658E1F83541900298B8D /* GTMSessionFetcher.framework in Frameworks */,
@@ -92,6 +97,7 @@
 		8BB68636B237393A0570C508 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9939DEC51F878D1900F8BF88 /* SwiftyJSON.framework */,
 				99C574AC1F838FFA00BB4B76 /* leveldb.framework */,
 				99F0658A1F83541900298B8D /* GoogleToolboxForMac.framework */,
 				99F0658B1F83541900298B8D /* GTMSessionFetcher.framework */,
@@ -148,12 +154,13 @@
 				99421E7F1F6A549000A0345B /* Main.storyboard */,
 				99421E7B1F6A549000A0345B /* AppDelegate.swift */,
 				993206271F7E203B00BF1DCC /* SplashVC.swift */,
-				99421E7D1F6A549000A0345B /* WelcomeVC.swift */,
+				99421E7D1F6A549000A0345B /* SignInVC.swift */,
 				99F6F5961F6BECC000F614CB /* RegisterVC.swift */,
 				993206291F7E224A00BF1DCC /* HomeVC.swift */,
 				99F27BA41F7E718400AF6C68 /* OrderDetailVC.swift */,
 				9950155D1F82096500FA99E6 /* CreateOrderVC.swift */,
 				9950155F1F82166D00FA99E6 /* AddItemVC.swift */,
+				E8D8CD7B1F8D6DD300757F99 /* AddNewItemVC.swift */,
 			);
 			name = ui;
 			sourceTree = "<group>";
@@ -295,6 +302,7 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-EasyMenu/Pods-EasyMenu-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
@@ -302,6 +310,7 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
@@ -317,9 +326,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				99421E7E1F6A549000A0345B /* WelcomeVC.swift in Sources */,
+				99421E7E1F6A549000A0345B /* SignInVC.swift in Sources */,
 				99421E7C1F6A549000A0345B /* AppDelegate.swift in Sources */,
 				99F27BA51F7E718400AF6C68 /* OrderDetailVC.swift in Sources */,
+				E8D8CD7C1F8D6DD300757F99 /* AddNewItemVC.swift in Sources */,
 				9932062D1F7E4CF600BF1DCC /* CellVC.swift in Sources */,
 				9932568B1F70E85C0010EB2A /* Constants.swift in Sources */,
 				9932062F1F7E4DD000BF1DCC /* Section.swift in Sources */,

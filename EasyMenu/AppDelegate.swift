@@ -14,11 +14,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
+    var  databaseRef: DatabaseReference{
+        
+        return Database.database().reference()
+    }
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        let urls = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
-        print(urls[urls.count-1] as URL)
+//        let urls = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
+//        print(urls[urls.count-1] as URL)
         FirebaseApp.configure()
+
         return true
     }
 
